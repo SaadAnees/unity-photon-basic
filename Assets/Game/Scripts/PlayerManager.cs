@@ -11,26 +11,37 @@ namespace Com.PPM.XRConference
     /// Player manager.
     /// Handles fire Input and Beams.
     /// </summary>
-    public class PlayerManager : MonoBehaviourPunCallbacks
+    public class PlayerManager : MonoBehaviourPunCallbacks, IPunObservable
     {
 
         CharacterController characterController;
         private Animator animator;
 
+        public FixedJoystick[] fixedJoysticks;
+        public FixedButton[] fixedButtons;
         public FixedJoystick LeftJoystick;
         public FixedJoystick RightJoystick;
         public FixedButton FixedButton1, FixedButton2;
 
         protected float CameraAngleY;
         protected float CameraAngleSpeed = 2f;
-        protected float CameraPosY;
+        protected float CameraPosY =3f;
         protected float CameraPosSpeed = 0.1f;
 
 
         #region Public Fields
 
+        [Tooltip("The Player's UI GameObject Prefab")]
+        [SerializeField]
+        public GameObject PlayerUiPrefab;
+
+        public GameObject JoystickPrefab;
+
         [Tooltip("The current Health of our player")]
         public float Health = 1f;
+
+        [Tooltip("The local player instance. Use this to know if the local player is represented in the Scene")]
+        public static GameObject LocalPlayerInstance;
 
         #endregion
 
@@ -41,6 +52,8 @@ namespace Com.PPM.XRConference
         private GameObject beams;
         //True, when the user is firing
         bool IsFiring;
+        GameObject _joystickGo;
+
         #endregion
 
         #region MonoBehaviour CallBacks
@@ -50,6 +63,16 @@ namespace Com.PPM.XRConference
         /// </summary>
         void Awake()
         {
+            // #Important
+            // used in GameManager.cs: we keep track of the localPlayer instance to prevent instantiation when levels are synchronized
+            if (photonView.IsMine)
+            {
+                PlayerManager.LocalPlayerInstance = this.gameObject;
+            }
+            // #Critical
+            // we flag as don't destroy on load so that instance survives level synchronization, thus giving a seamless experience when levels load.
+            DontDestroyOnLoad(this.gameObject);
+
             if (beams == null)
             {
                 Debug.LogError("<Color=Red><a>Missing</a></Color> Beams Reference.", this);
@@ -58,10 +81,43 @@ namespace Com.PPM.XRConference
             {
                 beams.SetActive(false);
             }
+
+            if(photonView.IsMine)
+            {
+                if (JoystickPrefab != null)
+                {
+                    _joystickGo = Instantiate(JoystickPrefab);
+                    //_joystickGo.SendMessage("SetJoystick", this, SendMessageOptions.RequireReceiver);
+                }
+                else
+                {
+                    Debug.LogWarning("<Color=Red><a>Missing</a></Color> JoystickPrefab reference on player Prefab.", this);
+                }
+            }
+           
+
+            //fixedJoysticks = GameObject.FindObjectsOfType<FixedJoystick>();
+            //fixedButtons = GameObject.FindObjectsOfType<FixedButton>();
+            
+            LeftJoystick = _joystickGo.transform.GetChild(0).GetComponent<FixedJoystick>();
+            RightJoystick = _joystickGo.transform.GetChild(1).GetComponent<FixedJoystick>();
+
+            FixedButton1 = _joystickGo.transform.GetChild(2).GetComponent<FixedButton>();
+            FixedButton2 = _joystickGo.transform.GetChild(3).GetComponent<FixedButton>();
         }
 
         void Start()
         {
+            if (PlayerUiPrefab != null)
+            {
+                GameObject _uiGo = Instantiate(PlayerUiPrefab);
+                _uiGo.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
+            }
+            else
+            {
+                Debug.LogWarning("<Color=Red><a>Missing</a></Color> PlayerUiPrefab reference on player Prefab.", this);
+            }
+            
             characterController = GetComponent<CharacterController>();
 
             animator = GetComponent<Animator>();
@@ -69,6 +125,11 @@ namespace Com.PPM.XRConference
             {
                 Debug.LogError("PlayerAnimatorManager is Missing Animator Component", this);
             }
+
+#if UNITY_5_4_OR_NEWER
+            // Unity 5.4 has a new scene management. register a method to call CalledOnLevelWasLoaded.
+            UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
+#endif
         }
 
         /// <summary>
@@ -76,18 +137,48 @@ namespace Com.PPM.XRConference
         /// </summary>
         void Update()
         {
+            if (photonView.IsMine == false && PhotonNetwork.IsConnected == true)
+            {
+                return;
+            }
+
             if (Health <= 0f)
             {
                 GameManager.Instance.LeaveRoom();
             }
 
-            ProcessInputs();
-            MobileMovement();
+            if (photonView.IsMine)
+            {
+                ProcessInputs();
+                MobileMovement();
+            }
+
             // trigger Beams active state
             if (beams != null && IsFiring != beams.activeInHierarchy)
             {
                 beams.SetActive(IsFiring);
             }
+        }
+
+#if !UNITY_5_4_OR_NEWER
+/// <summary>See CalledOnLevelWasLoaded. Outdated in Unity 5.4.</summary>
+void OnLevelWasLoaded(int level)
+{
+    this.CalledOnLevelWasLoaded(level);
+}
+#endif
+
+
+        void CalledOnLevelWasLoaded(int level)
+        {
+            // check if we are outside the Arena and if it's the case, spawn around the center of the arena in a safe zone
+            if (!Physics.Raycast(transform.position, -Vector3.up, 5f))
+            {
+                transform.position = new Vector3(0f, 5f, 0f);
+            }
+
+            GameObject _uiGo = Instantiate(this.PlayerUiPrefab);
+            _uiGo.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
         }
 
         void MobileMovement()
@@ -100,10 +191,18 @@ namespace Com.PPM.XRConference
 
             transform.rotation = Quaternion.AngleAxis(CameraAngleY + 180 + Vector3.SignedAngle(Vector3.forward, input.normalized + Vector3.forward * 0.001f, Vector3.up), Vector3.up);
 
-
             CameraAngleY += RightJoystick.Horizontal * CameraAngleSpeed;
-            Camera.main.transform.position = transform.position + Quaternion.AngleAxis(CameraAngleY, Vector3.up) * new Vector3(0, 3, 4);
-            Camera.main.transform.rotation = Quaternion.LookRotation(transform.position + Vector3.up * 2f - Camera.main.transform.position, Vector3.up);
+            CameraPosY = Mathf.Clamp(CameraPosY - RightJoystick.Vertical * CameraPosSpeed, 0, 5f);
+
+            if(Camera.main != null)
+            {
+                if(photonView.IsMine)
+                {
+                    Camera.main.transform.position = transform.position + Quaternion.AngleAxis(CameraAngleY, Vector3.up) * new Vector3(0, CameraPosY, 4);
+                    Camera.main.transform.rotation = Quaternion.LookRotation(transform.position + Vector3.up * 2f - Camera.main.transform.position, Vector3.up);
+
+                }
+            }
 
             animator.SetFloat("Speed", input.x * input.x + input.z * input.z);
             animator.SetFloat("Direction", LeftJoystick.Horizontal, CameraAngleSpeed, Time.deltaTime);
@@ -199,6 +298,45 @@ namespace Com.PPM.XRConference
 
 
         }
+
+#if UNITY_5_4_OR_NEWER
+        void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode loadingMode)
+        {
+            this.CalledOnLevelWasLoaded(scene.buildIndex);
+        }
+#endif
+
+#if UNITY_5_4_OR_NEWER
+        public override void OnDisable()
+        {
+            // Always call the base to remove callbacks
+            base.OnDisable();
+            UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+#endif
+
+        #region IPunObservable implementation
+
+
+        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+        {
+            if (stream.IsWriting)
+            {
+                // We own this player: send the others our data
+                stream.SendNext(IsFiring);
+                stream.SendNext(Health);
+            }
+            else
+            {
+                // Network player, receive data
+                this.IsFiring = (bool)stream.ReceiveNext();
+                this.Health = (float)stream.ReceiveNext();
+            }
+            
+        }
+
+
+        #endregion
 
         #endregion
     }

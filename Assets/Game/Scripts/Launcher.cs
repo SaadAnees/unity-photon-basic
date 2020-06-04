@@ -90,6 +90,7 @@ namespace Com.PPM.XRConference
             {
                 // #Critical we need at this point to attempt joining a Random Room. If it fails, we'll get notified in OnJoinRandomFailed() and we'll create one.
                 PhotonNetwork.JoinRandomRoom();
+                //PhotonNetwork.JoinOrCreateRoom("Room", new RoomOptions { MaxPlayers = maxPlayersPerRoom });
             }
             else
             {

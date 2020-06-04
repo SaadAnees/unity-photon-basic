@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 namespace Com.PPM.XRConference
 {
-    public class PlayerAnimatorManager : MonoBehaviour
+    public class PlayerAnimatorManager : MonoBehaviourPun
     {
         #region Private Fields
 
@@ -53,7 +54,7 @@ namespace Com.PPM.XRConference
             }
 
             // PC
-            #if UNITY_STANDALONE
+            //#if UNITY_STANDALONE
 
             float h = Input.GetAxis("Horizontal");
             float v = Input.GetAxis("Vertical");
@@ -63,7 +64,7 @@ namespace Com.PPM.XRConference
             }
             animator.SetFloat("Speed", h * h + v * v);
             animator.SetFloat("Direction", h, directionDampTime, Time.deltaTime);
-            #endif
+           // #endif
         }
 
         #endregion

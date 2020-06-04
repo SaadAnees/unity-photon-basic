@@ -400,8 +400,10 @@ GameObject:
   - component: {fileID: 5558817232471668888}
   - component: {fileID: 2773677913507893814}
   - component: {fileID: 2773677913507893818}
+  - component: {fileID: 7739046586963406808}
   - component: {fileID: 6056460450700424627}
   - component: {fileID: 4992958219048197634}
+  - component: {fileID: 378602291}
   m_Layer: 0
   m_Name: My Robot Kyle
   m_TagString: Untagged
@@ -469,12 +471,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7689365711840482349}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5301f5c4a270b4246a4a94a2d9849910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  directionDampTime: 0.25
+  directionDampTime: 0.08
 --- !u!114 &2773677913507893818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -482,7 +484,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7689365711840482349}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd08475b23aa548b7b9d28397d430b32, type: 3}
   m_Name: 
@@ -492,6 +494,21 @@ MonoBehaviour:
   centerOffset: {x: 0, y: 4, z: 0}
   followOnStart: 1
   smoothSpeed: 0.125
+--- !u!114 &7739046586963406808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7689365711840482349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
 --- !u!114 &6056460450700424627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -510,7 +527,9 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: 0}
+  - {fileID: 7739046586963406808}
+  - {fileID: 378602291}
+  - {fileID: 4992958219048197634}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -526,8 +545,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a23496d484b04ec40b23648bfe16aa58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fixedJoysticks: []
+  fixedButtons: []
+  LeftJoystick: {fileID: 0}
+  RightJoystick: {fileID: 0}
+  FixedButton1: {fileID: 0}
+  FixedButton2: {fileID: 0}
+  PlayerUiPrefab: {fileID: 1467244856136077975, guid: e86ef52ca90b9184a94c4915bfd38dea,
+    type: 3}
+  JoystickPrefab: {fileID: 3527879741814715071, guid: d4750f06db712514cb387f6ba8efdb5a,
+    type: 3}
   Health: 100
   beams: {fileID: 1984472971}
+--- !u!114 &378602291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7689365711840482349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLayerWeightsInspector: 1
+  ShowParameterInspector: 1
+  m_SynchronizeParameters:
+  - Type: 1
+    SynchronizeType: 1
+    Name: Speed
+  - Type: 1
+    SynchronizeType: 1
+    Name: Direction
+  - Type: 4
+    SynchronizeType: 0
+    Name: Hi
+  - Type: 9
+    SynchronizeType: 1
+    Name: Jump
+  m_SynchronizeLayers:
+  - SynchronizeType: 0
+    LayerIndex: 0
 --- !u!1 &7689365711840482351
 GameObject:
   m_ObjectHideFlags: 0
