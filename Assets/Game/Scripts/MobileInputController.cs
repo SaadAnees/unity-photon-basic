@@ -11,7 +11,7 @@ namespace Com.PPM.XRConference
 
         public FixedJoystick LeftJoystick;
         public FixedJoystick RightJoystick;
-        public FixedButton FixedButton;
+        public FixedButton FixedButton1, FixedButton2;
 
         protected float CameraAngleY;
         protected float CameraAngleSpeed = 2f;
@@ -33,6 +33,16 @@ namespace Com.PPM.XRConference
         // Update is called once per frame
         void Update()
         {
+            if(FixedButton1.Pressed)
+            {
+                animator.SetTrigger("Jump");
+            }
+
+            if (FixedButton2.Pressed)
+            {
+                animator.SetTrigger("Jump");
+            }
+            
             var input = new Vector3(LeftJoystick.Horizontal, 0, LeftJoystick.Vertical);
             var vel = Quaternion.AngleAxis(CameraAngleY + 180, Vector3.up) * input * 5f;
 
@@ -45,8 +55,8 @@ namespace Com.PPM.XRConference
             Camera.main.transform.position = transform.position + Quaternion.AngleAxis(CameraAngleY, Vector3.up) * new Vector3(0, 3, 4);
             Camera.main.transform.rotation = Quaternion.LookRotation(transform.position + Vector3.up * 2f - Camera.main.transform.position, Vector3.up);
 
-            animator.SetFloat("Speed", h * h + v * v);
-            animator.SetFloat("Direction", h, directionDampTime, Time.deltaTime);
+            animator.SetFloat("Speed", input.x * input.x + input.z * input.z);
+            animator.SetFloat("Direction", LeftJoystick.Horizontal, CameraAngleSpeed, Time.deltaTime);
         }
     }
 }
