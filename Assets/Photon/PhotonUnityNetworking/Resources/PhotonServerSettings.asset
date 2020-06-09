@@ -19,7 +19,7 @@ MonoBehaviour:
     AppVersion: 
     UseNameServer: 1
     FixedRegion: 
-    Server: 
+    Server: '  '
     Port: 0
     Protocol: 0
     AuthMode: 0

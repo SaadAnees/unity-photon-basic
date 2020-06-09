@@ -94,16 +94,20 @@ namespace Com.PPM.XRConference
                     Debug.LogWarning("<Color=Red><a>Missing</a></Color> JoystickPrefab reference on player Prefab.", this);
                 }
             }
-           
+
 
             //fixedJoysticks = GameObject.FindObjectsOfType<FixedJoystick>();
             //fixedButtons = GameObject.FindObjectsOfType<FixedButton>();
-            
-            LeftJoystick = _joystickGo.transform.GetChild(0).GetComponent<FixedJoystick>();
-            RightJoystick = _joystickGo.transform.GetChild(1).GetComponent<FixedJoystick>();
 
-            FixedButton1 = _joystickGo.transform.GetChild(2).GetComponent<FixedButton>();
-            FixedButton2 = _joystickGo.transform.GetChild(3).GetComponent<FixedButton>();
+
+            if (JoystickPrefab != null)
+            {
+                LeftJoystick = _joystickGo.transform.GetChild(0).GetComponent<FixedJoystick>();
+                RightJoystick = _joystickGo.transform.GetChild(1).GetComponent<FixedJoystick>();
+
+                FixedButton1 = _joystickGo.transform.GetChild(2).GetComponent<FixedButton>();
+                FixedButton2 = _joystickGo.transform.GetChild(3).GetComponent<FixedButton>();
+            }
         }
 
         void Start()

@@ -110,7 +110,7 @@ namespace Com.PPM.XRConference
 
         public override void OnConnectedToMaster()
         {
-            Debug.Log("PUN Basics Tutorial/Launcher: OnConnectedToMaster() was called by PUN");
+            Debug.Log("OnConnectedToMaster(): " + PhotonNetwork.CloudRegion + " server");
 
             // we don't want to do anything if we are not attempting to join a room.
             // this case where isConnecting is false is typically when you lost or quit the game, when this level is loaded, OnConnectedToMaster will be called, in that case
@@ -144,7 +144,7 @@ namespace Com.PPM.XRConference
         public override void OnJoinedRoom()
         {
             Debug.Log("PUN Basics Tutorial/Launcher: OnJoinedRoom() called by PUN. Now this client is in a room.");
-
+            Debug.Log("Room: " + PhotonNetwork.CurrentRoom);
             // #Critical: We only load if we are the first player, else we rely on `PhotonNetwork.AutomaticallySyncScene` to sync our instance scene.
             if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
             {
@@ -153,7 +153,7 @@ namespace Com.PPM.XRConference
 
                 // #Critical
                 // Load the Room Level.
-                PhotonNetwork.LoadLevel("Room for 1");
+                PhotonNetwork.LoadLevel("Room for 2");
             }
         }
         #endregion
