@@ -59,6 +59,20 @@ namespace Com.PPM.XRConference
             }
         }
 
+        void Update()
+        {
+            // "back" button of phone equals "Escape". quit app if that's pressed
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                QuitApplication();
+            }
+        }
+
+        public void QuitApplication()
+        {
+            Application.Quit();
+        }
+
         public void LeaveRoom()
         {
             PhotonNetwork.LeaveRoom();

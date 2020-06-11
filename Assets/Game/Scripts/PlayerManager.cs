@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
-
+using UnityEngine.UI;
 using Photon.Pun;
 
 using System.Collections;
@@ -54,6 +54,7 @@ namespace Com.PPM.XRConference
         bool IsFiring;
         GameObject _joystickGo;
 
+        Text enemyName;
         #endregion
 
         #region MonoBehaviour CallBacks
@@ -63,24 +64,26 @@ namespace Com.PPM.XRConference
         /// </summary>
         void Awake()
         {
-            // #Important
-            // used in GameManager.cs: we keep track of the localPlayer instance to prevent instantiation when levels are synchronized
-            if (photonView.IsMine)
-            {
-                PlayerManager.LocalPlayerInstance = this.gameObject;
-            }
-            // #Critical
-            // we flag as don't destroy on load so that instance survives level synchronization, thus giving a seamless experience when levels load.
-            DontDestroyOnLoad(this.gameObject);
 
-            if (beams == null)
+            if (this.beams == null)
             {
                 Debug.LogError("<Color=Red><a>Missing</a></Color> Beams Reference.", this);
             }
             else
             {
-                beams.SetActive(false);
+               this.beams.SetActive(false);
             }
+
+            // #Important
+            // used in GameManager.cs: we keep track of the localPlayer instance to prevent instantiation when levels are synchronized
+            if (photonView.IsMine)
+            {
+                LocalPlayerInstance = this.gameObject;
+            }
+            // #Critical
+            // we flag as don't destroy on load so that instance survives level synchronization, thus giving a seamless experience when levels load.
+            DontDestroyOnLoad(this.gameObject);
+
 
             if(photonView.IsMine)
             {
@@ -88,6 +91,11 @@ namespace Com.PPM.XRConference
                 {
                     _joystickGo = Instantiate(JoystickPrefab);
                     //_joystickGo.SendMessage("SetJoystick", this, SendMessageOptions.RequireReceiver);
+                    LeftJoystick = _joystickGo.transform.GetChild(0).GetComponent<FixedJoystick>();
+                    RightJoystick = _joystickGo.transform.GetChild(1).GetComponent<FixedJoystick>();
+
+                    FixedButton1 = _joystickGo.transform.GetChild(2).GetComponent<FixedButton>();
+                    FixedButton2 = _joystickGo.transform.GetChild(3).GetComponent<FixedButton>();
                 }
                 else
                 {
@@ -100,14 +108,14 @@ namespace Com.PPM.XRConference
             //fixedButtons = GameObject.FindObjectsOfType<FixedButton>();
 
 
-            if (JoystickPrefab != null)
-            {
-                LeftJoystick = _joystickGo.transform.GetChild(0).GetComponent<FixedJoystick>();
-                RightJoystick = _joystickGo.transform.GetChild(1).GetComponent<FixedJoystick>();
+            //if (JoystickPrefab != null)
+            //{
+            //    LeftJoystick = _joystickGo.transform.GetChild(0).GetComponent<FixedJoystick>();
+            //    RightJoystick = _joystickGo.transform.GetChild(1).GetComponent<FixedJoystick>();
 
-                FixedButton1 = _joystickGo.transform.GetChild(2).GetComponent<FixedButton>();
-                FixedButton2 = _joystickGo.transform.GetChild(3).GetComponent<FixedButton>();
-            }
+            //    FixedButton1 = _joystickGo.transform.GetChild(2).GetComponent<FixedButton>();
+            //    FixedButton2 = _joystickGo.transform.GetChild(3).GetComponent<FixedButton>();
+            //}
         }
 
         void Start()
@@ -116,6 +124,8 @@ namespace Com.PPM.XRConference
             {
                 GameObject _uiGo = Instantiate(PlayerUiPrefab);
                 _uiGo.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
+                print(_uiGo.transform.GetChild(3));
+                enemyName = _uiGo.transform.GetChild(3).GetComponent<Text>();
             }
             else
             {
@@ -146,21 +156,22 @@ namespace Com.PPM.XRConference
                 return;
             }
 
-            if (Health <= 0f)
-            {
-                GameManager.Instance.LeaveRoom();
-            }
-
+          
             if (photonView.IsMine)
             {
-                ProcessInputs();
-                MobileMovement();
+                this.ProcessInputs();
+                this.MobileMovement();
+                if (this.Health <= 0f)
+                {
+                    GameManager.Instance.LeaveRoom();
+                }
+
             }
 
             // trigger Beams active state
-            if (beams != null && IsFiring != beams.activeInHierarchy)
+            if (this.beams != null && this.IsFiring != this.beams.activeInHierarchy)
             {
-                beams.SetActive(IsFiring);
+                this.beams.SetActive(this.IsFiring);
             }
         }
 
@@ -292,7 +303,8 @@ void OnLevelWasLoaded(int level)
                 {
                     IsFiring = true;
                 }
-            }else
+            }
+            else
             {
                 if (IsFiring)
                 {
@@ -327,14 +339,17 @@ void OnLevelWasLoaded(int level)
             if (stream.IsWriting)
             {
                 // We own this player: send the others our data
-                stream.SendNext(IsFiring);
-                stream.SendNext(Health);
+                stream.SendNext(this.IsFiring);
+                stream.SendNext(this.Health);
+                stream.SendNext(this.enemyName.text);
+
             }
             else
             {
                 // Network player, receive data
                 this.IsFiring = (bool)stream.ReceiveNext();
                 this.Health = (float)stream.ReceiveNext();
+                this.enemyName.text = (string)stream.ReceiveNext();
             }
             
         }

@@ -1565,6 +1565,7 @@ GameObject:
   - component: {fileID: 2080805381}
   - component: {fileID: 2080805380}
   - component: {fileID: 2080805379}
+  - component: {fileID: 2080805382}
   m_Layer: 0
   m_Name: PhotonVoiceNetwork
   m_TagString: Untagged
@@ -1585,13 +1586,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   logLevel: 1
-  voiceDetection: 1
-  voiceDetectionThreshold: 0.01
+  voiceDetection: 0
+  voiceDetectionThreshold: 0.05
   voiceDetectionDelayMs: 500
-  unityMicrophoneDevice: Microphone (HD Pro Webcam C920)
-  photonMicrophoneDeviceId: 0
+  unityMicrophoneDevice: 
+  photonMicrophoneDeviceId: -1
   interestGroup: 0
-  debugEchoMode: 1
+  debugEchoMode: 0
   reliableMode: 0
   encrypt: 0
   transmitEnabled: 1
@@ -1660,6 +1661,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2080805382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080805378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ddec46cf6a4c4addbf21b6be8442124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logLevel: 1
+  aec: 0
+  aecMobile: 1
+  aecMobileComfortNoise: 0
+  agc: 1
+  vad: 1
+  highPass: 0
+  bypass: 0
+  noiseSuppression: 1
+  reverseStreamDelayMs: 120
 --- !u!1001 &4056107710337012395
 PrefabInstance:
   m_ObjectHideFlags: 0

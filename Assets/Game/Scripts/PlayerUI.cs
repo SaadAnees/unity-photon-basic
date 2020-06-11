@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-
+using Photon.Pun;
 
 using System.Collections;
 
@@ -107,7 +107,9 @@ namespace Com.PPM.XRConference
                 playerNameText.text = target.photonView.Owner.NickName;
             }
         }
-        
+
+      
+
         #endregion
 
 

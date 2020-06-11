@@ -18,14 +18,14 @@ MonoBehaviour:
     AppIdVoice: 40c95d0e-d8b3-4a23-bfc5-fd3a5bebfbb7
     AppVersion: 
     UseNameServer: 1
-    FixedRegion: 
-    Server: '  '
+    FixedRegion: eu
+    Server: 
     Port: 0
     Protocol: 0
     AuthMode: 0
     EnableLobbyStatistics: 0
     NetworkLogging: 1
-  DevRegion: in
+  DevRegion: eu
   PunLogging: 2
   EnableSupportLogger: 0
   RunInBackground: 1
