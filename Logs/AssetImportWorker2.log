@@ -1,0 +1,1843 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.34f1 (4886f5360533) revision 4753141'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 16288 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files (x86)\2022.3.34f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/ibada/Downloads/photon-basic
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+51707
+Successfully changed project path to: C:/Users/ibada/Downloads/photon-basic
+C:/Users/ibada/Downloads/photon-basic
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [6760] Host "[IP] 192.168.0.33 [Port] 0 [Flags] 2 [Guid] 175167672 [EditorId] 175167672 [Version] 1048832 [Id] WindowsEditor(7,MrRobot) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [6760] Host "[IP] 192.168.0.33 [Port] 0 [Flags] 2 [Guid] 175167672 [EditorId] 175167672 [Version] 1048832 [Id] WindowsEditor(7,MrRobot) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+Refreshing native plugins compatible for Editor in 57.94 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.34f1 (4886f5360533)
+[Subsystems] Discovering subsystems at path C:/Program Files (x86)/2022.3.34f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ibada/Downloads/photon-basic/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2487)
+    Vendor:   NVIDIA
+    VRAM:     12110 MB
+    Driver:   32.0.15.6614
+Initialize mono
+Mono path[0] = 'C:/Program Files (x86)/2022.3.34f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files (x86)/2022.3.34f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files (x86)/2022.3.34f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56628
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files (x86)/2022.3.34f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files (x86)/2022.3.34f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.015347 seconds.
+- Loaded All Assemblies, in  0.702 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 425 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.961 seconds
+Domain Reload Profiling: 1661ms
+	BeginReloadAssembly (295ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (51ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (96ms)
+	LoadAllAssembliesAndSetupDomain (243ms)
+		LoadAssemblies (293ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (239ms)
+			TypeCache.Refresh (237ms)
+				TypeCache.ScanAssembly (220ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (962ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (854ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (593ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (186ms)
+			ProcessInitializeOnLoadMethodAttributes (65ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.831 seconds
+Refreshing native plugins compatible for Editor in 10.09 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.980 seconds
+Domain Reload Profiling: 1807ms
+	BeginReloadAssembly (166ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (561ms)
+		LoadAssemblies (531ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (127ms)
+			TypeCache.Refresh (104ms)
+				TypeCache.ScanAssembly (84ms)
+			ScanForSourceGeneratedMonoScriptInfo (14ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (980ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (794ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (81ms)
+			ProcessInitializeOnLoadAttributes (648ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 10.21 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1777 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (72.5 KB). Loaded Objects now: 2218.
+Memory consumption went from 96.9 MB to 96.8 MB.
+Total: 5.387100 ms (FindLiveObjects: 0.271700 ms CreateObjectMapping: 0.080000 ms MarkObjects: 4.846100 ms  DeleteObjects: 0.187500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 157387.415378 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/UtilityScripts/UI/GraphicToggleIsOnTransition.cs
+  artifactKey: Guid(195602a009c4b42b6a62e0bdf601b70d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/UtilityScripts/UI/GraphicToggleIsOnTransition.cs using Guid(195602a009c4b42b6a62e0bdf601b70d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '23de87e46e3e1a31fb32ce1622eb5acd') in 0.140726 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Prefabs/Bullet.prefab
+  artifactKey: Guid(5624ee9da9d10514ea7b808e83979c85) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Prefabs/Bullet.prefab using Guid(5624ee9da9d10514ea7b808e83979c85) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9f16888c4fb873194366888001cdd587') in 0.066269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Photon/PhotonVoice/Code/Editor/PhotonVoice.Editor.asmdef
+  artifactKey: Guid(ae8024269c736ee49ba1179cb00214e5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Code/Editor/PhotonVoice.Editor.asmdef using Guid(ae8024269c736ee49ba1179cb00214e5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2ce68d32fbdb367a156a10862cb2039e') in 0.020046 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Materials/FlyerAsteroid.mat
+  artifactKey: Guid(968fc57e6928a5448ae7d0644246d534) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Materials/FlyerAsteroid.mat using Guid(968fc57e6928a5448ae7d0644246d534) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '14be4354dd2d1ce2befec0f72cf580de') in 0.044836 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoiceUI/gizmo-speech-bubble.png
+  artifactKey: Guid(58086affa71851c4b81d7fba4c08e0b6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoiceUI/gizmo-speech-bubble.png using Guid(58086affa71851c4b81d7fba4c08e0b6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8445545358f6659fd034189279a91731') in 0.130013 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoiceUI/Gradient.png
+  artifactKey: Guid(6c4246dd80904b747bd0f2b32a4b5bef) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoiceUI/Gradient.png using Guid(6c4246dd80904b747bd0f2b32a4b5bef) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '34398bd7c08ea3ecff44a98de5f84c7c') in 0.044354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Photon/PhotonVoice/Code/Editor/VoiceConnectionEditor.cs
+  artifactKey: Guid(9496980b6639f4cb68abaed8fdda658e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Code/Editor/VoiceConnectionEditor.cs using Guid(9496980b6639f4cb68abaed8fdda658e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e4ad3e7b1876678e5a02deecc932feee') in 0.016618 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Textures/FlyerPlayershipOcclusion.tif
+  artifactKey: Guid(34b19bc20b665b240af9c0fc9d0086f6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Textures/FlyerPlayershipOcclusion.tif using Guid(34b19bc20b665b240af9c0fc9d0086f6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '78c0ed603f406d7cb11d10cfa1801091') in 0.035223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Photon/PhotonVoice/Code/UtilityScripts/ConnectAndJoin.cs
+  artifactKey: Guid(65b99afb3758e9e4689c28a18224eb8f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Code/UtilityScripts/ConnectAndJoin.cs using Guid(65b99afb3758e9e4689c28a18224eb8f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e72cb847af0d79c869022b1c7d671299') in 0.015668 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/Voice.cs
+  artifactKey: Guid(18f9b07cba07af14d932cad74819269c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/Voice.cs using Guid(18f9b07cba07af14d932cad74819269c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '238c2c20d86c72682008d2d8d5d1e6c6') in 0.014094 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Photon/PhotonVoice/Code/PUN/PhotonVoiceNetwork.cs
+  artifactKey: Guid(81d9debcbaf99472bb70ffc2f99cb23f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Code/PUN/PhotonVoiceNetwork.cs using Guid(81d9debcbaf99472bb70ffc2f99cb23f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6659c1b291e730af42843328d02332cb') in 0.016758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/Black.mat
+  artifactKey: Guid(1598ff147655ecb4893e78f88baa9475) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/Black.mat using Guid(1598ff147655ecb4893e78f88baa9475) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'dd11749fc6f41a129548532a7be6f51d') in 0.019168 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scenes/DemoAsteroids-LobbyScene.unity
+  artifactKey: Guid(c8a9d1312a49dc8488a9b32d83d659c7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scenes/DemoAsteroids-LobbyScene.unity using Guid(c8a9d1312a49dc8488a9b32d83d659c7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'da0ab2898d0c93b85294323e8ffd7799') in 0.012232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Photon/PhotonVoice/Code/PUN/PhotonVoiceView.cs
+  artifactKey: Guid(126494ae2a10a34499272ed97a6c9f5d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Code/PUN/PhotonVoiceView.cs using Guid(126494ae2a10a34499272ed97a6c9f5d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f60f2cdd22130591902acf68cc1ac384') in 0.023829 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Code/Editor/Views/PhotonTransformViewClassicEditor.cs
+  artifactKey: Guid(22292ca8ffb574945bedfaf49266672e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Code/Editor/Views/PhotonTransformViewClassicEditor.cs using Guid(22292ca8ffb574945bedfaf49266672e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c3b025055f1bf15fa44fc33e75891b3a') in 0.020872 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Photon/PhotonVoice/Code/Editor/SpeakerEditor.cs
+  artifactKey: Guid(10964642c52ad634da4de24866140e2d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Code/Editor/SpeakerEditor.cs using Guid(10964642c52ad634da4de24866140e2d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9c3d717481d0b8dcbeace6e3b46320bb') in 0.021271 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Code/Editor/Views/PhotonRigidbody2DViewEditor.cs
+  artifactKey: Guid(3a82e8e86b9eecb40ac3f6ebc949f6ef) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Code/Editor/Views/PhotonRigidbody2DViewEditor.cs using Guid(3a82e8e86b9eecb40ac3f6ebc949f6ef) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c4f2f9e8b71408d1a829f89a93edf464') in 0.015100 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scenes/DemoAsteroids-GameScene.unity
+  artifactKey: Guid(98efc37d6307844488eb3e4247dde7e9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scenes/DemoAsteroids-GameScene.unity using Guid(98efc37d6307844488eb3e4247dde7e9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9a0370f275645548d69b99c3cd000007') in 0.012450 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Photon/PhotonVoice/Code/PUN/PhotonVoice.PUN.asmdef
+  artifactKey: Guid(d62e4537d6f8ca64c8d2affe565a5cd1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Code/PUN/PhotonVoice.PUN.asmdef using Guid(d62e4537d6f8ca64c8d2affe565a5cd1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1092a0a3509fb768375eed2bd72dfd7c') in 0.014564 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoHub/Sprites/Gradient.png
+  artifactKey: Guid(66efb24ed46044ab8a039599cbc47d7b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoHub/Sprites/Gradient.png using Guid(66efb24ed46044ab8a039599cbc47d7b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c4b6f1a0b2235e37e1fbe521d16b8e2a') in 0.033953 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/VoiceFramed.cs
+  artifactKey: Guid(77072df79fb8bfd479f0d359c52da86d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/VoiceFramed.cs using Guid(77072df79fb8bfd479f0d359c52da86d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ac4de6d94b0beaa48ebda138d007a026') in 0.013024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/OpusCodec.cs
+  artifactKey: Guid(5719ade38a2e369499e9a9b886d1d2a4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/OpusCodec.cs using Guid(5719ade38a2e369499e9a9b886d1d2a4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '68a58dbe9873143e2cf0d02e95b7ce48') in 0.014885 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/VoiceInfo.cs
+  artifactKey: Guid(694a5db5ef326ef45aab0e6f68821506) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/VoiceInfo.cs using Guid(694a5db5ef326ef45aab0e6f68821506) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '831ea5c3236a7080b139e1d9c0ed687b') in 0.016187 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoiceUI/gizmo-speaker.png
+  artifactKey: Guid(78b736601df34e145b113200f637e37f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoiceUI/gizmo-speaker.png using Guid(78b736601df34e145b113200f637e37f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '54f44bda84c8c42ca71033939b51b1a7') in 0.038612 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/LightGreen.mat
+  artifactKey: Guid(cd644746d7159df42b0c206b559af881) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/LightGreen.mat using Guid(cd644746d7159df42b0c206b559af881) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ac018893f072735f53b6a0390f89fd18') in 0.017081 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Photon/PhotonVoice/Code/UtilityScripts/PhotonVoiceStatsGui.cs
+  artifactKey: Guid(0d7b4b6b64f1b474d802f50cb9c720a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Code/UtilityScripts/PhotonVoiceStatsGui.cs using Guid(0d7b4b6b64f1b474d802f50cb9c720a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b93cdb9945e7ab8c94e6ba263940e944') in 0.015770 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/ObjectPool.cs
+  artifactKey: Guid(46ece2c70263eb04dac50bcda01781b3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/ObjectPool.cs using Guid(46ece2c70263eb04dac50bcda01781b3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3e5cfb7d1cc5e61d2080aeacc566efaf') in 0.013920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Models/Asteroid01.fbx
+  artifactKey: Guid(401fae203bae0ee428e401e7f9af9be8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Models/Asteroid01.fbx using Guid(401fae203bae0ee428e401e7f9af9be8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '036184bbba938e5b8429ee460925ec75') in 0.064312 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceLibs/x86_64/libopus_egpv.so
+  artifactKey: Guid(a131c2259f6a24e47b342bba6783efbb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceLibs/x86_64/libopus_egpv.so using Guid(a131c2259f6a24e47b342bba6783efbb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '47386fe3af2405f6d45d6538f2e9682c') in 0.017895 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Resources/Spaceship.prefab
+  artifactKey: Guid(775dd0a15ad25a544b33ad40ef0da1f0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Resources/Spaceship.prefab using Guid(775dd0a15ad25a544b33ad40ef0da1f0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e4689d4ed6639ad75e7dea646b1ec5a3') in 0.060436 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 15.012543 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/Yellow.mat
+  artifactKey: Guid(90623549d4482f042ade35d8a0758e35) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Materials/Yellow.mat using Guid(90623549d4482f042ade35d8a0758e35) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '877633f17dc2d18aa3ca3018aff24e75') in 0.019250 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Materials/SkyBox-Voice.mat
+  artifactKey: Guid(378e6f5b30ae67c4da6848fcb2f8b455) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Materials/SkyBox-Voice.mat using Guid(378e6f5b30ae67c4da6848fcb2f8b455) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b4d79dcd71d42231c416e53723df4a58') in 0.062488 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/InfosPanelPlaceholder.cs
+  artifactKey: Guid(d85daee5b585047f89b7e2dde78b336b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/InfosPanelPlaceholder.cs using Guid(d85daee5b585047f89b7e2dde78b336b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd61d6dc422c17b055f9c7d00cb77b504') in 0.019949 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/SlotLanes.cs
+  artifactKey: Guid(54c0aa0c215c64226bdfacbeed74edbb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/SlotLanes.cs using Guid(54c0aa0c215c64226bdfacbeed74edbb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1395fb7aedde0807b1fc8242d92f2b8b') in 0.014989 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Forms/CreateRoomUiForm.cs
+  artifactKey: Guid(93560c151be5f43aaa41c69fba615970) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Forms/CreateRoomUiForm.cs using Guid(93560c151be5f43aaa41c69fba615970) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f293745e9489ca0c67b5bc6d295ad828') in 0.016715 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoProximityVoiceChat/Scripts/PointersController.cs
+  artifactKey: Guid(455698a23ea64d1438d545455ecaf6a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoProximityVoiceChat/Scripts/PointersController.cs using Guid(455698a23ea64d1438d545455ecaf6a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '08ba4ce174f72d82caa52d1b5070f9f1') in 0.019432 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Scripts/DocLinks.cs
+  artifactKey: Guid(07e445bad5cb64ae8ad6661ce248d844) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Scripts/DocLinks.cs using Guid(07e445bad5cb64ae8ad6661ce248d844) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '66b3db9e8d245011c0a63812db05df28') in 0.016496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoProximityVoiceChat/Scripts/ProximityVoiceTrigger.cs
+  artifactKey: Guid(93f52792dd821664a896b3c1c0418b9e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoProximityVoiceChat/Scripts/ProximityVoiceTrigger.cs using Guid(93f52792dd821664a896b3c1c0418b9e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b273ce06478d7a3785990138c3579abf') in 0.014505 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/ScoreHelper.cs
+  artifactKey: Guid(5a92eafb6e3fe4390b50c3eefbcc0504) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/ScoreHelper.cs using Guid(5a92eafb6e3fe4390b50c3eefbcc0504) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '07257bdbc12dc2b9cea1d74347d96f1d') in 0.016070 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scripts/LoaderAnime.cs
+  artifactKey: Guid(df9597db7c55c44e885b8f74697d5ba0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scripts/LoaderAnime.cs using Guid(df9597db7c55c44e885b8f74697d5ba0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1ccf40a3716a413af97d7517cfca4cb5') in 0.018024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Materials/UnitTextureGreen12x.mat
+  artifactKey: Guid(8c13ddd2bc8fa4e85943376cf7c8bf7d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Materials/UnitTextureGreen12x.mat using Guid(8c13ddd2bc8fa4e85943376cf7c8bf7d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '70d67e6e4899dfa7c4bc196b8739a596') in 0.024740 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/Robot Kyle@Running.fbx
+  artifactKey: Guid(cd0e3010ec4a7471ab652a490698f310) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/Robot Kyle@Running.fbx using Guid(cd0e3010ec4a7471ab652a490698f310) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'bd3bbf8ae3c3b729865ec0c8e2d71ddd') in 0.046877 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 104
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Animation/ZomBunnyAOC.overrideController
+  artifactKey: Guid(1b59b88f1aa4d4648a1045edc50c099a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Animation/ZomBunnyAOC.overrideController using Guid(1b59b88f1aa4d4648a1045edc50c099a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0c3ed2748929500fbf046e7cfa5e8f44') in 0.027168 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Photon/PhotonVoice/Code/UtilityScripts/MicAmplifier/MicAmplifierFloat.cs
+  artifactKey: Guid(54f7c01cbf9e64e42bde37b5a0bee411) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Code/UtilityScripts/MicAmplifier/MicAmplifierFloat.cs using Guid(54f7c01cbf9e64e42bde37b5a0bee411) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0cd551030137186b3124bb91d31f33e8') in 0.017672 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Textures/Robot_Color.png
+  artifactKey: Guid(1fbb41709a1d9334696860db720026e5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Textures/Robot_Color.png using Guid(1fbb41709a1d9334696860db720026e5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c1bab13b09fe9d8ae484d237415dc709') in 0.045607 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/Orbitron Black.ttf
+  artifactKey: Guid(495c9e2a934bcc640a8d7427b13cb680) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/Orbitron Black.ttf using Guid(495c9e2a934bcc640a8d7427b13cb680) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '45850095e2ff41f9b779cc4ae4c0369b') in 0.035692 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Forms/UserIdUiForm.cs
+  artifactKey: Guid(a37901dfac2364b018833f32816a7a16) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Forms/UserIdUiForm.cs using Guid(a37901dfac2364b018833f32816a7a16) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '35456ccafb55b953f8f1b74fe9337903') in 0.018960 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scenes/PunBasics-Room for 1.unity
+  artifactKey: Guid(9b8561c6e396849a5ba48c3eb9524049) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scenes/PunBasics-Room for 1.unity using Guid(9b8561c6e396849a5ba48c3eb9524049) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '63d889ebc54c0eb051a50a1593822cb0') in 0.016265 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/Editor/PhotonTeamsManagerInspector.cs
+  artifactKey: Guid(8cb74f08e3fc52942a0d8557772bf4dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/UtilityScripts/PhotonPlayer/Editor/PhotonTeamsManagerInspector.cs using Guid(8cb74f08e3fc52942a0d8557772bf4dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1beb6d928dc844b16e92b623db0d2d1f') in 0.025721 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Prefabs/PushToTalkPrivateButton.prefab
+  artifactKey: Guid(bdf4cfe4036413d498cde5db91d3340e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Prefabs/PushToTalkPrivateButton.prefab using Guid(bdf4cfe4036413d498cde5db91d3340e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4775f7831bbb18c0b4ad5b4d47504188') in 0.101063 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/POpusCodec/OpusWrapper.cs
+  artifactKey: Guid(77cd94f028ee3694892414e62e8c968b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/POpusCodec/OpusWrapper.cs using Guid(77cd94f028ee3694892414e62e8c968b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd6b8f8f32ae6bb912edf6c10d90cb1d3') in 0.017237 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Textures/HellephantNormals.png
+  artifactKey: Guid(39323f4e1dd1d80408bd05af5f2db69f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Textures/HellephantNormals.png using Guid(39323f4e1dd1d80408bd05af5f2db69f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ad450e4ab1956c33ac5a310fe2f83d4e') in 0.043831 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Animation/PlayerAnimatorController.controller
+  artifactKey: Guid(8360fd2187b2ccf4e910cb292f55710e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Animation/PlayerAnimatorController.controller using Guid(8360fd2187b2ccf4e910cb292f55710e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4561a2856551e218c81eb2ce06dfaf7d') in 0.015994 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Textures/UnitCircleTexture.png
+  artifactKey: Guid(875557e634eec5c42a4681b331501c01) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Textures/UnitCircleTexture.png using Guid(875557e634eec5c42a4681b331501c01) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '737c945971c93674e7db80255a9f92ee') in 0.033469 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/POpusCodec/OpusDecoder.cs
+  artifactKey: Guid(7e5845bbdc72e27409113023d0ee1ac6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/POpusCodec/OpusDecoder.cs using Guid(7e5845bbdc72e27409113023d0ee1ac6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '84a8b2f023553cd2145faf027efd0f34') in 0.023119 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Textures/ZomBunnyDiffuse.png
+  artifactKey: Guid(c621ddb405f9fd24eb7ab79082ce3d10) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Textures/ZomBunnyDiffuse.png using Guid(c621ddb405f9fd24eb7ab79082ce3d10) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a9890d4a9200c641d4a15d4a7c892312') in 0.040338 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Photon/PhotonVoice/Code/PUN/Editor/PhotonVoiceNetworkEditor.cs
+  artifactKey: Guid(fa70a22b498b27f41a0bb50f9a287764) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Code/PUN/Editor/PhotonVoiceNetworkEditor.cs using Guid(fa70a22b498b27f41a0bb50f9a287764) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0143874d804f896f03f084a43c99c1a4') in 0.020023 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/PlayerControl.cs
+  artifactKey: Guid(4fde14656bc40455ba65844c093b79a3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/PlayerControl.cs using Guid(4fde14656bc40455ba65844c093b79a3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '348726a4b222acd29a49c79f254cb426') in 0.017030 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/Photon/PhotonVoice/Code/UtilityScripts/Editor/ConnectAndJoinEditor.cs
+  artifactKey: Guid(814145524f648a04fa42d1ac5cbfb885) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Code/UtilityScripts/Editor/ConnectAndJoinEditor.cs using Guid(814145524f648a04fa42d1ac5cbfb885) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e7da87fa5df32555352fda75cf42909f') in 0.017572 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Resources/Player Controller.prefab
+  artifactKey: Guid(c9248d8e58293473bb27cf2f5505f88b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Resources/Player Controller.prefab using Guid(c9248d8e58293473bb27cf2f5505f88b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7528ee62deacbae8c2d39441d116165a') in 0.056140 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 307
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scripts/CameraWork.cs
+  artifactKey: Guid(fd08475b23aa548b7b9d28397d430b32) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scripts/CameraWork.cs using Guid(fd08475b23aa548b7b9d28397d430b32) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '13716d9bcff818ef54b4029d193fd41c') in 0.017972 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/Jura-Flat-Material.mat
+  artifactKey: Guid(c190da5d14d0e904ba512abe82018576) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/Jura-Flat-Material.mat using Guid(c190da5d14d0e904ba512abe82018576) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c2a76360405a00fd2aa617f32946add0') in 0.016777 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoProximityVoiceChat/Scenes/ProximityVoiceChat.unity
+  artifactKey: Guid(9f1cd40f49900e341843571f937a9c61) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoProximityVoiceChat/Scenes/ProximityVoiceChat.unity using Guid(9f1cd40f49900e341843571f937a9c61) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ef50954c6e5ff7a1e65ae320466e2764') in 0.013144 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/UnitCircleMaterial.mat
+  artifactKey: Guid(fb6c12085a6b0a5429029fcd6478a816) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/UnitCircleMaterial.mat using Guid(fb6c12085a6b0a5429029fcd6478a816) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '535c5e0b0dc59b8e56a784711bea67a5') in 0.026390 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Textures/gizmo-speech-bubble.png
+  artifactKey: Guid(7f03ad306684b814691c894ce28dc105) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Textures/gizmo-speech-bubble.png using Guid(7f03ad306684b814691c894ce28dc105) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7a079a3e1715f541fbc5cf0ab35804af') in 0.042966 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Materials/ZombunnyMaterial.mat
+  artifactKey: Guid(90309a9ae07af7a4baf27031c594f369) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Materials/ZombunnyMaterial.mat using Guid(90309a9ae07af7a4baf27031c594f369) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b0ce5199f6e6becf0b60199d7747b8fa') in 0.051733 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceApi/Platforms/Unity/UnityAudioOut.cs
+  artifactKey: Guid(1f85d1b1e5a7ebb4a802f1681c789cce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceApi/Platforms/Unity/UnityAudioOut.cs using Guid(1f85d1b1e5a7ebb4a802f1681c789cce) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'dffb10810d462588cf910f1d01f52e8b') in 0.016910 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/BezierCurve/BezierCurve.cs
+  artifactKey: Guid(b7b6b4e22427e4efbb847bd026324e59) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/BezierCurve/BezierCurve.cs using Guid(b7b6b4e22427e4efbb847bd026324e59) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '84fd9b607824a98521f11075f63dc9a8') in 0.016886 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/Game/Asteroid.cs
+  artifactKey: Guid(c852cc8bbc743374083cab6f7df68bb7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/Game/Asteroid.cs using Guid(c852cc8bbc743374083cab6f7df68bb7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ddf95f20387dcb2fcdc6ada508c11011') in 0.015777 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoiceUI/RobotoFont/Apache License.txt
+  artifactKey: Guid(d885444fcbcff8441a020461620e620b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoiceUI/RobotoFont/Apache License.txt using Guid(d885444fcbcff8441a020461620e620b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'df3b999f01a68765a78804483bd2736b') in 0.019678 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scripts/PlayerUI.cs
+  artifactKey: Guid(dba1a179e553446f0a08606778f559f1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scripts/PlayerUI.cs using Guid(dba1a179e553446f0a08606778f559f1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '714d66fbc5b18c58e3431d862cf5c2c3') in 0.017029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Fonts/Orbitron Black.txt
+  artifactKey: Guid(65187d32dde0b674f852c7d0ecac94c7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Fonts/Orbitron Black.txt using Guid(65187d32dde0b674f852c7d0ecac94c7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '80497d07492ff677012a3d5506d39c7e') in 0.015338 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/ToggleOnHover.png
+  artifactKey: Guid(e10a16d9e8c6b844db2d3c1c5e4f231e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/ToggleOnHover.png using Guid(e10a16d9e8c6b844db2d3c1c5e4f231e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8b318e6bd968a34a0d0dc31c55df101c') in 0.041666 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceApi/Platforms/Unity/UnityAndroidAudioInAEC.cs
+  artifactKey: Guid(b8e9493e44a5d38499becd1b5872544f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceApi/Platforms/Unity/UnityAndroidAudioInAEC.cs using Guid(b8e9493e44a5d38499becd1b5872544f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'bac3e2532819d8737a8d05dd13943ac9') in 0.022367 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceApi/Platforms/Apple/MacOSAudioInPusher.cs
+  artifactKey: Guid(ab8e66f1eb3800d49956586cf5a27e1f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceApi/Platforms/Apple/MacOSAudioInPusher.cs using Guid(ab8e66f1eb3800d49956586cf5a27e1f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0462a3582728d56892a0863390374868') in 0.016651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Copyrights.txt
+  artifactKey: Guid(386ff113c810b4ecfb823874aeb6fb97) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Copyrights.txt using Guid(386ff113c810b4ecfb823874aeb6fb97) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4039e7de2fce33f7ab48562c18e75834') in 0.016633 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/BoxOrange.png
+  artifactKey: Guid(13548d8d0fcb5c44b8044ce08a99c697) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/BoxOrange.png using Guid(13548d8d0fcb5c44b8044ce08a99c697) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '443f6a6d8db5094bfb8240234307e9b4') in 0.041259 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Prefabs/Quit Room Button.prefab
+  artifactKey: Guid(b19bb80838bcf4457bf6f50a19c5593b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Prefabs/Quit Room Button.prefab using Guid(b19bb80838bcf4457bf6f50a19c5593b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6970407d2bbeecfb1f92a079f7504460') in 0.065355 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scenes/PunBasics-Launcher.unity
+  artifactKey: Guid(bff77b01b50254edbb6edeeaba5ae8b3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scenes/PunBasics-Launcher.unity using Guid(bff77b01b50254edbb6edeeaba5ae8b3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'aaa180075ba1fe6584544f4f00c70a52') in 0.016344 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoProximityVoiceChat/Prefabs/PointerDownPrefab.prefab
+  artifactKey: Guid(08c3b11b9f0671c499d1caeb9108b1d3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoProximityVoiceChat/Prefabs/PointerDownPrefab.prefab using Guid(08c3b11b9f0671c499d1caeb9108b1d3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd3fee551e6d5e3153e7d5e43f1a969e9') in 0.029108 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/Gradient.mat
+  artifactKey: Guid(32e7ed8e6b80b884bbed8260b788648b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/Gradient.mat using Guid(32e7ed8e6b80b884bbed8260b788648b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9d56a4b8e632e58b4ff18af80a885638') in 0.019976 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Forms/LoadLevelUIForm.cs
+  artifactKey: Guid(f833cfc95509a49658fedf2e4cdc3a62) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Forms/LoadLevelUIForm.cs using Guid(f833cfc95509a49658fedf2e4cdc3a62) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5f4b34e8672f6df13ccc272b942f59af') in 0.021240 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Textures/HellephantEmissive.png
+  artifactKey: Guid(f0b5213189232764daf08b2e7ad112f5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Textures/HellephantEmissive.png using Guid(f0b5213189232764daf08b2e7ad112f5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '76ee3f54e307de58d07b9076acf35074') in 0.044714 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Photon/PhotonVoice/Code/UtilityScripts/MicAmplifier/MicAmplifierShort.cs
+  artifactKey: Guid(fa8d3b254d2d2e6488f58f4d71ee2363) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Code/UtilityScripts/MicAmplifier/MicAmplifierShort.cs using Guid(fa8d3b254d2d2e6488f58f4d71ee2363) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e9a5935b7c18c60780ea695a1ceb3885') in 0.015493 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceLibs/iOS/Photon/AudioInChange.mm
+  artifactKey: Guid(390b04c50fbffc84a8af104a55cc0eef) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceLibs/iOS/Photon/AudioInChange.mm using Guid(390b04c50fbffc84a8af104a55cc0eef) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '52e352758f1560f9ce40d4d5228df49d') in 0.017633 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/ReadOnlyProperties/CurrentRoomMaxPlayersProperty.cs
+  artifactKey: Guid(917233b0ebdbc43ff89ee3e8d30b5d88) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/ReadOnlyProperties/CurrentRoomMaxPlayersProperty.cs using Guid(917233b0ebdbc43ff89ee3e8d30b5d88) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd43de5858ff002ae4cde1090ff51c20e') in 0.024517 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/FriendListCell.cs
+  artifactKey: Guid(b7be18b2f537f4428b8e4cd92373a1e0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/FriendListCell.cs using Guid(b7be18b2f537f4428b8e4cd92373a1e0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0cff7723a617b25c92c9a597107370f8') in 0.021148 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Autonomous UI/NickNameField.cs
+  artifactKey: Guid(ea425f69fa0f244a79a3514a6d64cab2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Autonomous UI/NickNameField.cs using Guid(ea425f69fa0f244a79a3514a6d64cab2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '17667f46162b2623227005bfddaa2b92') in 0.017316 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Autonomous UI/LayoutElementMatchSize.cs
+  artifactKey: Guid(3ec618017b87f49b4a2bfc6a0a0bff3d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Autonomous UI/LayoutElementMatchSize.cs using Guid(3ec618017b87f49b4a2bfc6a0a0bff3d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7790ecb836f1529d985c022c24e1ab4c') in 0.021542 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/ReadOnlyProperties/CurrentRoomMasterClientIdProperty.cs
+  artifactKey: Guid(ded3411e394ba4dcc82f3b6e25871839) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/ReadOnlyProperties/CurrentRoomMasterClientIdProperty.cs using Guid(ded3411e394ba4dcc82f3b6e25871839) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f081959b856752412998532ed4f2da5c') in 0.023180 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/Materials/TeethMaterial.mat
+  artifactKey: Guid(17dd34e8a826d0641a0e0f43da1e03a0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/Materials/TeethMaterial.mat using Guid(17dd34e8a826d0641a0e0f43da1e03a0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0c087e8595bd732a52a9521f2d922d69') in 0.016032 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/ReadOnlyProperties/CurrentRoomIsVisibleProperty.cs
+  artifactKey: Guid(9caca36858e0a4cdb9511261f0525c72) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/ReadOnlyProperties/CurrentRoomIsVisibleProperty.cs using Guid(9caca36858e0a4cdb9511261f0525c72) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5608dcb3cbb2ecb4783c5035d4146955') in 0.019126 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000088 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Autonomous UI/SendRateField.cs
+  artifactKey: Guid(f6ed1c2b7c01b4b3cba625a08a991c7f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Autonomous UI/SendRateField.cs using Guid(f6ed1c2b7c01b4b3cba625a08a991c7f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0d701f1f1930c6d76bbfa7836d930e37') in 0.022531 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/PlayerListCell.cs
+  artifactKey: Guid(0170261016c824eebb6c78e47e0b9ea0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/PlayerListCell.cs using Guid(0170261016c824eebb6c78e47e0b9ea0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '72dab38d9c8d6170d9f55acd4713a356') in 0.017927 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceLibs/WSA/x64/opus_egpv.dll
+  artifactKey: Guid(2fbe46d707222fd4fbcc17c57a1de0ac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceLibs/WSA/x64/opus_egpv.dll using Guid(2fbe46d707222fd4fbcc17c57a1de0ac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'bd186119940e0a82d2cc077d613c0fca') in 0.019163 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/ReadOnlyProperties/CloudRegionProperty.cs
+  artifactKey: Guid(e873bef6b926e45989cc835cb13ef3c2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/ReadOnlyProperties/CloudRegionProperty.cs using Guid(e873bef6b926e45989cc835cb13ef3c2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1579913ffe4d329b460268d280f38978') in 0.018306 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Textures/ZomBearEmission.png
+  artifactKey: Guid(0513a639646d5434085ed846c332e341) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Textures/ZomBearEmission.png using Guid(0513a639646d5434085ed846c332e341) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'cb3309b8f6d321a37b39cca9e81b6b44') in 0.038137 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Autonomous UI/DocLinkButton.cs
+  artifactKey: Guid(09b634200c91b4206aa56038f7647fb5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Autonomous UI/DocLinkButton.cs using Guid(09b634200c91b4206aa56038f7647fb5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '25a0baf1d5c661ed41b899264f522451') in 0.018447 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Scripts/ThirdPersonController.cs
+  artifactKey: Guid(ae58c0b74b23bf64e856c46783d1f181) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Scripts/ThirdPersonController.cs using Guid(ae58c0b74b23bf64e856c46783d1f181) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2acb816eb2f05dffd97f049e2e119531') in 0.017452 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/Lobby/LobbyMainPanel.cs
+  artifactKey: Guid(84fd812a67908014cb408f749ca7a55e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/Lobby/LobbyMainPanel.cs using Guid(84fd812a67908014cb408f749ca7a55e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b0bdf42cf084f7a57de5a6505424f950') in 0.030018 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceApi/Platforms/Apple/MacOSAudioInReader.cs
+  artifactKey: Guid(494e76bdf154e75448c8d100bb1e5418) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceApi/Platforms/Apple/MacOSAudioInReader.cs using Guid(494e76bdf154e75448c8d100bb1e5418) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e00d593a774df256efe649a0cdd5a1c9') in 0.019913 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/ReadOnlyProperties/PingProperty.cs
+  artifactKey: Guid(2651ec6773ffe4831b1fce07d51c186a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/ReadOnlyProperties/PingProperty.cs using Guid(2651ec6773ffe4831b1fce07d51c186a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd820601a312a681ff31fad8eea5fb5b2') in 0.021873 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Scripts/ChangePOV.cs
+  artifactKey: Guid(4dd7c72bb79ad6544aae08d975251222) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Scripts/ChangePOV.cs using Guid(4dd7c72bb79ad6544aae08d975251222) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6c133202bc07693f553c81b95972cd43') in 0.019314 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Textures/ZomBearDiffuse.png
+  artifactKey: Guid(4543a6aa9a0d7874c86b472dbe652692) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Textures/ZomBearDiffuse.png using Guid(4543a6aa9a0d7874c86b472dbe652692) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8b5d376f3e35f7680d1a4896b5cb4515') in 0.038734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/Robot_Color.mat
+  artifactKey: Guid(0aa851515cd3747d6b3b3e461199a2ed) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/Robot_Color.mat using Guid(0aa851515cd3747d6b3b3e461199a2ed) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c5a2c3ad63017f9b4e377b101a8dbf02') in 0.020754 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/BezierCurve/Line.cs
+  artifactKey: Guid(3886e96ecea4f4f0eb98bb0c41a31fbe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/BezierCurve/Line.cs using Guid(3886e96ecea4f4f0eb98bb0c41a31fbe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '17623a0ab12e4b7f5f271720b97756c8') in 0.016696 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Audio/Pop-J_Fairba-8421_hifi.mp3
+  artifactKey: Guid(f60c28e299c51fd47b838b76f2f9ec17) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Audio/Pop-J_Fairba-8421_hifi.mp3 using Guid(f60c28e299c51fd47b838b76f2f9ec17) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '03cf79ca825a147a7226fc5a40b2ab46') in 0.077183 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/POpusCodec/Enums/SamplingRate.cs
+  artifactKey: Guid(da8e988f56d8cac4085853c2022d334a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/POpusCodec/Enums/SamplingRate.cs using Guid(da8e988f56d8cac4085853c2022d334a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '91888051f303bf3573e81a33ac8e2de4') in 0.016847 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/windows_2.mat
+  artifactKey: Guid(db1318ffb13bfef419a8dad09473425d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/windows_2.mat using Guid(db1318ffb13bfef419a8dad09473425d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '52c52ed6dd908a1aca69d3fa6732b76d') in 0.019817 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/insides_3.mat
+  artifactKey: Guid(cdcec2345c1d1af4da10b1c5d9cbff65) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/insides_3.mat using Guid(cdcec2345c1d1af4da10b1c5d9cbff65) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6b27cf40d1feb39c67f0137020f300e4') in 0.021831 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/roof.mat
+  artifactKey: Guid(ede00b712b6fb134282e1efba44fefd8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/roof.mat using Guid(ede00b712b6fb134282e1efba44fefd8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'cb144be44467dfa426bd239bdf81a405') in 0.018569 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Stylized city/Materials/20 - Default.mat
+  artifactKey: Guid(87d5291daa97cca4b94c73b9923d805c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Stylized city/Materials/20 - Default.mat using Guid(87d5291daa97cca4b94c73b9923d805c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '645c8ccf219e11b1d104a723617bce54') in 0.019741 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/car_4.FBX
+  artifactKey: Guid(f3cb3c8f5cd4b514ebf9fbfda32cb36d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/car_4.FBX using Guid(f3cb3c8f5cd4b514ebf9fbfda32cb36d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ceaec044a450b8f734c93040b42f080b') in 0.087677 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 76
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/POpusCodec/Enums/OpusApplicationType.cs
+  artifactKey: Guid(3b56e03108f395e4e9f2f95cbfe9a83e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/POpusCodec/Enums/OpusApplicationType.cs using Guid(3b56e03108f395e4e9f2f95cbfe9a83e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c7046e1dcc941a4fc089103f6aa16a31') in 0.019209 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/ground_green.mat
+  artifactKey: Guid(fef45cc204351a9458f02ad7c0243f18) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/ground_green.mat using Guid(fef45cc204351a9458f02ad7c0243f18) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd2c368e02e500d18dfc8374d97a0426b') in 0.017780 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Stylized city/Materials/13 - Default54.mat
+  artifactKey: Guid(e84d2f5f320cc8f4493a38d7e103daaf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Stylized city/Materials/13 - Default54.mat using Guid(e84d2f5f320cc8f4493a38d7e103daaf) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '64647fe001fe5f104173e1e619c1cd01') in 0.016236 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/CrossPlatformInputGuidelines.txt
+  artifactKey: Guid(a3b997593a4f12c4c991490593f3b513) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/CrossPlatformInputGuidelines.txt using Guid(a3b997593a4f12c4c991490593f3b513) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '87080fe7efce60a35c3322b45bb62896') in 0.019723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/roadRampLongCurvedWall.fbx
+  artifactKey: Guid(002276cc119770f4c8b9797abd47f7e5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/roadRampLongCurvedWall.fbx using Guid(002276cc119770f4c8b9797abd47f7e5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b993fbdf3c8baa88847b87a4361253cd') in 0.044307 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/POpusCodec/Enums/ForceChannels.cs
+  artifactKey: Guid(0fad225c913bc4642b5a21011c794587) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/POpusCodec/Enums/ForceChannels.cs using Guid(0fad225c913bc4642b5a21011c794587) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a2f376f9117ce3eac57bb1457b89b17e') in 0.019581 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Models/Characters/ZomBear.fbx
+  artifactKey: Guid(c236aa7ad6dcabe47abc7d2cf903ae71) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Models/Characters/ZomBear.fbx using Guid(c236aa7ad6dcabe47abc7d2cf903ae71) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1ec4055e754bbdef815ce87ee3a89b86') in 0.040975 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Stylized city/Materials/ground_green232.mat
+  artifactKey: Guid(9a17f7379eb854e409d45285657f5166) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Stylized city/Materials/ground_green232.mat using Guid(9a17f7379eb854e409d45285657f5166) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6ac81c72a335f2b8e325b15d042455f0') in 0.021555 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceLibs/Android/libs/arm64-v8a/libwebrtc-audio.so
+  artifactKey: Guid(5d19bf964ebb56f40bac37945746abd9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceLibs/Android/libs/arm64-v8a/libwebrtc-audio.so using Guid(5d19bf964ebb56f40bac37945746abd9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0b8432bcb9f7f9b7999f3e7b7d6dbc5e') in 0.019873 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Models/Characters/Player.fbx
+  artifactKey: Guid(f1d84cc28597f5641a3d9cbc4df7e306) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Models/Characters/Player.fbx using Guid(f1d84cc28597f5641a3d9cbc4df7e306) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd6466280e18f501357228b28120f206a') in 0.093617 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/Scripts/PlatformSpecific/StandaloneInput.cs
+  artifactKey: Guid(9961032f4f02c4f41997c3ea399d2f22) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/Scripts/PlatformSpecific/StandaloneInput.cs using Guid(9961032f4f02c4f41997c3ea399d2f22) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9afcf59e4393f7e68b42d5e88d6dfeae') in 0.020547 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/BezierCurve/Editor/BezierSplineInspector.cs
+  artifactKey: Guid(127eddf8173c549d9976751e82f3face) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/BezierCurve/Editor/BezierSplineInspector.cs using Guid(127eddf8173c549d9976751e82f3face) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f8488328414359a3f7ad9b6c54b50267') in 0.019218 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/Sprites/ButtonThumbstickOverSprite.png
+  artifactKey: Guid(5485e2f56028a3c4cb54f5caa167377e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/Sprites/ButtonThumbstickOverSprite.png using Guid(5485e2f56028a3c4cb54f5caa167377e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'bf066eb22331a619dcc6012e121dfb1f') in 0.048490 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/Scripts/AxisTouchButton.cs
+  artifactKey: Guid(9ab98b66288df7b4fa182075f2f12bd6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/Scripts/AxisTouchButton.cs using Guid(9ab98b66288df7b4fa182075f2f12bd6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c6cee307ed5c00d8c665c5a449976135') in 0.017237 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000154 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/Prefabs/MobileSingleStickControl.prefab
+  artifactKey: Guid(9529ecc3d479da5499993355e6c2cb4f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/Prefabs/MobileSingleStickControl.prefab using Guid(9529ecc3d479da5499993355e6c2cb4f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2a0ebcc1cc3e0e4f13647bb59c97a440') in 0.046378 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/Scripts/CrossPlatformInputManager.cs
+  artifactKey: Guid(6ac1ce5a5adfd9f46adbf5b6f752a47c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/Scripts/CrossPlatformInputManager.cs using Guid(6ac1ce5a5adfd9f46adbf5b6f752a47c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '04db43a83af29bee587d410547a17080') in 0.015267 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Stylized city/Materials/13 - Default22662.mat
+  artifactKey: Guid(085f0706ad3515b40a2be9b8d2775c26) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Stylized city/Materials/13 - Default22662.mat using Guid(085f0706ad3515b40a2be9b8d2775c26) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5ea7ce8bc7b8cf1081a7c97fe4ad681a') in 0.018142 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/13 - Default.mat
+  artifactKey: Guid(b957742c5b9bfd441b9b330c8b55d0c5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/13 - Default.mat using Guid(b957742c5b9bfd441b9b330c8b55d0c5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'de0648b46e28fabb571a68c1329ca02a') in 0.018343 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/Scripts/Joystick.cs
+  artifactKey: Guid(00c3c865782347f41b6358d9fba14b48) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/Scripts/Joystick.cs using Guid(00c3c865782347f41b6358d9fba14b48) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ceb2f0ab225dbe758549cf385da24269') in 0.019035 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scenes/PunBasics-Room for 2.unity
+  artifactKey: Guid(764428c63577f4580af4ce54ca9f4b1b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Scenes/PunBasics-Room for 2.unity using Guid(764428c63577f4580af4ce54ca9f4b1b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4c6a71ad992e63d4df79ae794489d7ab') in 0.013754 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceLibs/iOS/Photon/ForceToSpeaker.h
+  artifactKey: Guid(6f2cd825a50e3e540807c271daa56c4e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceLibs/iOS/Photon/ForceToSpeaker.h using Guid(6f2cd825a50e3e540807c271daa56c4e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'efa3e29ef938bffb2c1ea53160574dd6') in 0.016624 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Prefabs/SlotCar_B.prefab
+  artifactKey: Guid(71e3000ee30414d368eeee6d87961b6d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Prefabs/SlotCar_B.prefab using Guid(71e3000ee30414d368eeee6d87961b6d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6537fc059f151714d1bcd409f4c73988') in 0.018692 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 81
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Materials/EyesMaterial.mat
+  artifactKey: Guid(51d14e0fd3936be48bf8d5031d3e24c7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Materials/EyesMaterial.mat using Guid(51d14e0fd3936be48bf8d5031d3e24c7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'fd4d42e76568da37f322ec55a1699402') in 0.017881 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Photon/PhotonVoice/Code/UtilityScripts/MicAmplifier/MicAmplifier.cs
+  artifactKey: Guid(a3986deb98168394684c41606a9495af) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Code/UtilityScripts/MicAmplifier/MicAmplifier.cs using Guid(a3986deb98168394684c41606a9495af) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd7f25d789f4333ffac0d7f1d7aeebde3') in 0.018166 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Models/Characters/Zombunny.fbx
+  artifactKey: Guid(be66986effd141b4992d2d78be127139) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Models/Characters/Zombunny.fbx using Guid(be66986effd141b4992d2d78be127139) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2597e0a3686044312dfc53eeb19f7159') in 0.066627 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/BoxBright.png
+  artifactKey: Guid(ab6d288fac925ae48bbeb5e02d83dce3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/BoxBright.png using Guid(ab6d288fac925ae48bbeb5e02d83dce3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'cf340494aabc33cc74c67d1b000390cb') in 0.034624 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Materials/UnitTextureYellow12x.mat
+  artifactKey: Guid(ceba02e8dfaf34474b36fe43b51b69db) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Materials/UnitTextureYellow12x.mat using Guid(ceba02e8dfaf34474b36fe43b51b69db) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '57e4627b553c2b3ecf38e78d1864e516') in 0.023502 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/UtilityScripts/Culling/Editor/CullAreaEditor.cs
+  artifactKey: Guid(abadaa451a7bff0489078ed9eec61133) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/UtilityScripts/Culling/Editor/CullAreaEditor.cs using Guid(abadaa451a7bff0489078ed9eec61133) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '222226d2003b698bd2787ec01c35c539') in 0.017279 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Photon/PhotonVoice/Code/UtilityScripts/MicAmplifier/MicAmplifierEditor.cs
+  artifactKey: Guid(2ca8fce417a134e4eb5444c7a9d071bb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Code/UtilityScripts/MicAmplifier/MicAmplifierEditor.cs using Guid(2ca8fce417a134e4eb5444c7a9d071bb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '52cc6f6c1aedd8feab1909f346d4f4e5') in 0.016626 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/tree_1.FBX
+  artifactKey: Guid(92afa2e4e0d0b8542bf48b0de3ac19bd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/tree_1.FBX using Guid(92afa2e4e0d0b8542bf48b0de3ac19bd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '01caffa90cdd759cdd4f97df7b1ef154') in 0.047706 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceLibs/Android/libs/audioinaec.aar
+  artifactKey: Guid(639355de6a899f248b80d0b5c55a0806) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceLibs/Android/libs/audioinaec.aar using Guid(639355de6a899f248b80d0b5c55a0806) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'bcbc794a9b18d57ae4bf820db30ec255') in 0.017009 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Resources/ZomBear.prefab
+  artifactKey: Guid(ea3c2728ef33e3a4d99527a86cda6465) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Resources/ZomBear.prefab using Guid(ea3c2728ef33e3a4d99527a86cda6465) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '65b3e15ca2b4b8e0b3de291b7be6d004') in 0.103054 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 69
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/Materials/_defaultMat.mat
+  artifactKey: Guid(f0a6a86e908f6204ab518387a784ed36) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/Materials/_defaultMat.mat using Guid(f0a6a86e908f6204ab518387a784ed36) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f532bcdc9b164e30157929c474154fe0') in 0.021774 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoiceUI/RobotoFont/RobotoCondensed-Regular.ttf
+  artifactKey: Guid(1c24caf2cf8ad3f4d97b3ed7b7749c28) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoiceUI/RobotoFont/RobotoCondensed-Regular.ttf using Guid(1c24caf2cf8ad3f4d97b3ed7b7749c28) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '32033521f68121e13abea5ad9eec2bb6') in 0.029943 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Autonomous UI/Generic/BoolInputField.cs
+  artifactKey: Guid(0d7694afd58e94f988b7b524da7b97b9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Autonomous UI/Generic/BoolInputField.cs using Guid(0d7694afd58e94f988b7b524da7b97b9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '121f8d7fb8e766af8fbef8055a11ec3c') in 0.020540 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/RegionListCell.cs
+  artifactKey: Guid(02fae3d80c772498b829c70de76f4ba7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/RegionListCell.cs using Guid(02fae3d80c772498b829c70de76f4ba7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7848fe07ada794d9cc73e50206a86370') in 0.019650 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoProximityVoiceChat/Prefabs/PointerUpPrefab.prefab
+  artifactKey: Guid(09212bbda5fa5e940ab81dd092962344) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoProximityVoiceChat/Prefabs/PointerUpPrefab.prefab using Guid(09212bbda5fa5e940ab81dd092962344) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '767b10dc672bfe641745247eb31a1499') in 0.024355 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/Sprites/ButtonThumbstickUpSprite.png
+  artifactKey: Guid(9866a92691696b346901281f2b329034) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/Sprites/ButtonThumbstickUpSprite.png using Guid(9866a92691696b346901281f2b329034) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '94ca2dc80544617b4ef720db574ffa05') in 0.042519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/POpusCodec/OpusException.cs
+  artifactKey: Guid(0e58599e136c25840b3b218d87c868d6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/POpusCodec/OpusException.cs using Guid(0e58599e136c25840b3b218d87c868d6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '902b05f9e46fbacd054eb92bdb354cd7') in 0.016280 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/Lobby/PlayerListEntry.cs
+  artifactKey: Guid(6b92420fa27b32d43a6a35af7781c5d8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Scripts/Lobby/PlayerListEntry.cs using Guid(6b92420fa27b32d43a6a35af7781c5d8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a5c9e7092cc9d912221a474b69076f8e') in 0.022407 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/RoomListView.cs
+  artifactKey: Guid(f5c9e34bb9f7d43a4a17eb45abbba66e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/RoomListView.cs using Guid(f5c9e34bb9f7d43a4a17eb45abbba66e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '20a2419bd812b729bf3c368098757e30') in 0.017069 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/POpusCodec/Enums/Bandwidth.cs
+  artifactKey: Guid(a5d31f5f8ad95814aa2630dd49661651) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/POpusCodec/Enums/Bandwidth.cs using Guid(a5d31f5f8ad95814aa2630dd49661651) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ad3056644a19f6a0a85c0aa33ca245d4') in 0.014448 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceApi/Platforms/Unity/AudioOutCapture.cs
+  artifactKey: Guid(378ed5daabe2adf44bcb2adea9e01f38) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceApi/Platforms/Unity/AudioOutCapture.cs using Guid(378ed5daabe2adf44bcb2adea9e01f38) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '378a45fd3f84e374e878bb10833bb521') in 0.017073 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/POpusCodec/Enums/Delay.cs
+  artifactKey: Guid(d95712a751760bb4d8473705ec636b8a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/POpusCodec/Enums/Delay.cs using Guid(d95712a751760bb4d8473705ec636b8a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5e1d48084a72e1297f5fdf0a717cbe24') in 0.018421 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/ReadOnlyProperties/ServerProperty.cs
+  artifactKey: Guid(6aeb7bea76d39499e83ebc277ffdd7a7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/ReadOnlyProperties/ServerProperty.cs using Guid(6aeb7bea76d39499e83ebc277ffdd7a7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'dd0f8c37b3fc84980f553df11680b803') in 0.022127 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/Scripts/InputAxisScrollbar.cs
+  artifactKey: Guid(7d3269566d48b8447bb48d2259e28f8b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/Scripts/InputAxisScrollbar.cs using Guid(7d3269566d48b8447bb48d2259e28f8b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ce88ddb0dd0d70f23f72b4c4a10ea611') in 0.018203 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Scripts/WorldGenerator.cs
+  artifactKey: Guid(4190307f26497ca49b67855340776e0a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoProcedural/Scripts/WorldGenerator.cs using Guid(4190307f26497ca49b67855340776e0a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '9d8ab15f4dd1e5db6890ae9a4d50d603') in 0.020275 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/RoomListCell.cs
+  artifactKey: Guid(347470b28bdc940a9b92930118dbc7e0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/RoomListCell.cs using Guid(347470b28bdc940a9b92930118dbc7e0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '04c70f8b5726c2d183b365df025ab349') in 0.017848 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Models/Robot Kyle.fbx
+  artifactKey: Guid(320b1c2af77554f99a1658df4a6d3d5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Models/Robot Kyle.fbx using Guid(320b1c2af77554f99a1658df4a6d3d5c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '37e058b28bc6c85f92d477b3cce62744') in 0.047002 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 108
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/FriendListView.cs
+  artifactKey: Guid(ce2efcae64ac14edebdffc99a93e401a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Lists/FriendListView.cs using Guid(ce2efcae64ac14edebdffc99a93e401a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '66aaf1d761a7a0ab54fb5be794e2149e') in 0.019366 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Autonomous UI/GameVersionField.cs
+  artifactKey: Guid(74b76e97b5bf042e3b0a981241bce379) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/Autonomous UI/GameVersionField.cs using Guid(74b76e97b5bf042e3b0a981241bce379) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'b2a67256bf841821151fd4cbbe303d15') in 0.022474 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/POpusCodec/Enums/OpusStatusCode.cs
+  artifactKey: Guid(faa5c6013a75cae469ddb4617b187b47) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceApi/Core/POpusCodec/Enums/OpusStatusCode.cs using Guid(faa5c6013a75cae469ddb4617b187b47) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '725cc916f7fe016a364b84d14ae4712d') in 0.016448 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Textures/UnitTextureRed.png
+  artifactKey: Guid(9349ff1a2d6d7804486fef5d7c3a67de) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Textures/UnitTextureRed.png using Guid(9349ff1a2d6d7804486fef5d7c3a67de) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f77fc8b11b689e6eccacfe39a09df70a') in 0.034665 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/24 - Default.mat
+  artifactKey: Guid(c14837dfa515883428e5652d93e80c72) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/24 - Default.mat using Guid(c14837dfa515883428e5652d93e80c72) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'aea412d28a217c47d89e8d007757a4d2') in 0.017364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/bush1.FBX
+  artifactKey: Guid(c8680fab33c72bb4ba3e31987e0b0182) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Models/bush1.FBX using Guid(c8680fab33c72bb4ba3e31987e0b0182) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'f5ccf9015803e67e59d6c5cfa704d1bd') in 0.040122 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoProximityVoiceChat/Materials/PointerDownMaterial.mat
+  artifactKey: Guid(a5d674afed51d364584e2fa7b22927c0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoProximityVoiceChat/Materials/PointerDownMaterial.mat using Guid(a5d674afed51d364584e2fa7b22927c0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'c4177dafad3100ce74f16a9e92652a24') in 0.018811 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Photon/PhotonVoice/PhotonVoiceLibs/Android/libs/arm64-v8a/libopus_egpv.so
+  artifactKey: Guid(2a528d31d0389594aac6883a461b9cc0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/PhotonVoiceLibs/Android/libs/arm64-v8a/libopus_egpv.so using Guid(2a528d31d0389594aac6883a461b9cc0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a713900ee726bbe6d2639266da4101a4') in 0.019783 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/UnitTextureRed.mat
+  artifactKey: Guid(4c506c95d32f3494e9453ef5c0124b0e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/UnitTextureRed.mat using Guid(4c506c95d32f3494e9453ef5c0124b0e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'e2c43246fab1e8f24b7a00fe2f1aa7f9') in 0.022242 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/Scripts/VirtualInput.cs
+  artifactKey: Guid(0f57aeb1b8dce3342bea5c28ac17db24) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonVoice/Demos/DemoVoicePun/Standard Assets/CrossPlatformInput/Scripts/VirtualInput.cs using Guid(0f57aeb1b8dce3342bea5c28ac17db24) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2204970da4245463c6b0f5a2c800d60f') in 0.016693 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/ReadOnlyProperties/IsConnectedProperty.cs
+  artifactKey: Guid(398773e8d21e14a6780ad50d653d4b9e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunCockpit/Scripts/ReadOnlyProperties/IsConnectedProperty.cs using Guid(398773e8d21e14a6780ad50d653d4b9e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a0d933a92cbbdb2246af66f22b1bbf05') in 0.019478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 10.065446 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset
+  artifactKey: Guid(1d2094d0561195040923f48d7687e478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset using Guid(1d2094d0561195040923f48d7687e478) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a6f0beabe2bf216538782f051ed75d3d') in 0.010984 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 382.284732 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset
+  artifactKey: Guid(1d2094d0561195040923f48d7687e478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset using Guid(1d2094d0561195040923f48d7687e478) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4e2512d10583d943e9173626dd09c79c') in 0.001591 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.911279 seconds.
+  path: Assets/Game/Resources/My Robot Kyle.prefab
+  artifactKey: Guid(9a3bb8a7ff1b6174bb21699e0dd54bee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Game/Resources/My Robot Kyle.prefab using Guid(9a3bb8a7ff1b6174bb21699e0dd54bee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1a4bdfdac67f2fe73c9503b8c54ba879') in 0.154679 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 208
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset
+  artifactKey: Guid(1d2094d0561195040923f48d7687e478) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset using Guid(1d2094d0561195040923f48d7687e478) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '913cd61549cf527fb3b04143a5de9283') in 0.019401 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.608 seconds
+Refreshing native plugins compatible for Editor in 10.26 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.381 seconds
+Domain Reload Profiling: 1986ms
+	BeginReloadAssembly (210ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (51ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (272ms)
+		LoadAssemblies (373ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1382ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (955ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (33ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (97ms)
+			ProcessInitializeOnLoadAttributes (781ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 12.69 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1768 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 53 unused Assets / (74.5 KB). Loaded Objects now: 2228.
+Memory consumption went from 95.4 MB to 95.3 MB.
+Total: 4.138400 ms (FindLiveObjects: 0.184200 ms CreateObjectMapping: 0.050100 ms MarkObjects: 3.739700 ms  DeleteObjects: 0.163300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
