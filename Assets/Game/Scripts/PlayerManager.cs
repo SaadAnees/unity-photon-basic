@@ -126,6 +126,9 @@ namespace Com.PPM.XRConference
                 _uiGo.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
                 print(_uiGo.transform.GetChild(3));
                 enemyName = _uiGo.transform.GetChild(3).GetComponent<Text>();
+
+                CameraAngleY = Camera.main.transform.eulerAngles.y; // Set camera angle at start
+                transform.rotation = Quaternion.Euler(0, CameraAngleY + 180, 0);
             }
             else
             {
@@ -198,29 +201,42 @@ void OnLevelWasLoaded(int level)
 
         void MobileMovement()
         {
-           
+            //Vector3 direction = Vector3.forward * variableJoystick.Vertical + Vector3.right * variableJoystick.Horizontal;
             var input = new Vector3(LeftJoystick.Horizontal, 0, LeftJoystick.Vertical);
-            var vel = Quaternion.AngleAxis(CameraAngleY + 180, Vector3.up) * input * 5f;
 
-            characterController.velocity.Set(vel.x, characterController.velocity.y, vel.z); //= new Vector3(vel.x, characterController.velocity.y, vel.z);
+            // Check if there is input from the joystick
+            if (input.sqrMagnitude > 0.01f) // Avoid very small values to prevent jittering
+            {
+                // Calculate the velocity based on camera angle
+                var vel = Quaternion.AngleAxis(CameraAngleY + 180, Vector3.up) * input * 5f;
 
-            transform.rotation = Quaternion.AngleAxis(CameraAngleY + 180 + Vector3.SignedAngle(Vector3.forward, input.normalized + Vector3.forward * 0.001f, Vector3.up), Vector3.up);
+                // Update character's velocity
+                characterController.velocity.Set(vel.x, characterController.velocity.y, vel.z);
 
+                // Update character's rotation to face the movement direction
+                transform.rotation = Quaternion.AngleAxis(
+                    CameraAngleY + 180 + Vector3.SignedAngle(Vector3.forward, input.normalized, Vector3.up),
+                    Vector3.up
+                );
+            }
+
+            // Handle camera rotation
             CameraAngleY += RightJoystick.Horizontal * CameraAngleSpeed;
             CameraPosY = Mathf.Clamp(CameraPosY - RightJoystick.Vertical * CameraPosSpeed, 0, 5f);
 
-            if(Camera.main != null)
+            if (Camera.main != null && photonView.IsMine)
             {
-                if(photonView.IsMine)
-                {
-                    Camera.main.transform.position = transform.position + Quaternion.AngleAxis(CameraAngleY, Vector3.up) * new Vector3(0, CameraPosY, 4);
-                    Camera.main.transform.rotation = Quaternion.LookRotation(transform.position + Vector3.up * 2f - Camera.main.transform.position, Vector3.up);
-
-                }
+                Camera.main.transform.position = transform.position + Quaternion.AngleAxis(CameraAngleY, Vector3.up) * new Vector3(0, CameraPosY, 4);
+                Camera.main.transform.rotation = Quaternion.LookRotation(
+                    transform.position + Vector3.up * 2f - Camera.main.transform.position,
+                    Vector3.up
+                );
             }
 
-            animator.SetFloat("Speed", input.x * input.x + input.z * input.z);
+            // Update animations based on input magnitude
+            animator.SetFloat("Speed", input.sqrMagnitude); // Speed is proportional to movement input
             animator.SetFloat("Direction", LeftJoystick.Horizontal, CameraAngleSpeed, Time.deltaTime);
+
         }
         /// <summary>
         /// MonoBehaviour method called when the Collider 'other' enters the trigger.
